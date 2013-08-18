@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <!--<link rel="stylesheet" href="/css/login.css"/>-->
+</head>
+<body>
+    <div class="login">
+        <h1>Todo Login</h1>
+        <hr>
+        <form action="/login" method="post" name="login">
+            <input type="text" name="username"/>
+            <input type="password" name="password"/>
+            <button type="submit">login</button>
+        </form>
+        <h6 style="color: red"><%= error %></h6>
+    </div>
+</body>
+</html>

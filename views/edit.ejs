@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+</head>
+<body>
+    <a href="/">< back</a><hr>
+    <form action="/update" method="post">
+        <input type="hidden" name="todoId" value="<%= todo._id %>"/>
+        <input type="text" name="content" value="<%= todo.content %>"/><br>
+        <input type="submit" value="update"/>
+    </form>
+</body>
+</html>
